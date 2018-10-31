@@ -20,11 +20,24 @@ function longPlaneteerCalls(words) {
   }
 }
 
-function findTheCheese (foods) {
+function findTheCheese(foods) {
   if (foods.includes('cheddar')) {
     return 'cheddar'
+  }
+  else if (foods.includes('gouda')) {
+  return 'gouda'
   }
   else {
     return 'no cheese!'
   }
+}
+function wordsWithB(words) {
+  var wordsb = [];
+  for (var i = 0; i < words.length; i++) {
+    var bIndex = words[i].startsWith("b");
+    if (bIndex === true) {
+      wordsb.push(words[i])
+    }
+  }
+  return wordsb
 }
